@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSMenuController">
+            <connections>
+                <outlet property="sidebarView" destination="BBE-M9-Ce9" id="vNz-b3-gaT"/>
+                <outlet property="userHeadView" destination="Xf1-ZF-xwV" id="wgU-Ah-VOl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidebar_signin_default" translatesAutoresizingMaskIntoConstraints="NO" id="Xf1-ZF-xwV">
+                    <rect key="frame" x="20" y="40" width="66" height="66"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="WsR-Px-SNb"/>
+                        <constraint firstAttribute="width" constant="66" id="wHB-Fi-bnf"/>
+                    </constraints>
+                </imageView>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwR-6i-AVE">
+                    <rect key="frame" x="94" y="59" width="58" height="27"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="ULE-Yr-v5Z"/>
+                        <constraint firstAttribute="height" constant="27" id="dB4-dI-GAK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="50" minY="6" maxX="0.0" maxY="6"/>
+                    <state key="normal" title="登录" image="sidebar_arrow_normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="sidebar_arrow_pressed"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBE-M9-Ce9">
+                    <rect key="frame" x="99" y="136" width="176" height="184"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QtL-W8-7MP">
+                            <rect key="frame" x="0.0" y="144" width="176" height="40"/>
+                            <subviews>
+                                <imageView hidden="YES" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar_dot" translatesAutoresizingMaskIntoConstraints="NO" id="wyh-O8-2Xe">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <animations/>
+                                </imageView>
+                                <button tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLL-3q-WdH">
+                                    <rect key="frame" x="18" y="0.0" width="150" height="40"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="110" maxY="0.0"/>
+                                    <state key="normal" title="游戏推荐" image="sidebar_icon_play_normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="sidebar_icon_play_pressed"/>
+                                    <connections>
+                                        <action selector="clickSideBarButton:" destination="-1" eventType="touchUpInside" id="uqx-fx-3o2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIz-1g-w9I">
+                            <rect key="frame" x="0.0" y="96" width="176" height="40"/>
+                            <subviews>
+                                <imageView hidden="YES" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar_dot" translatesAutoresizingMaskIntoConstraints="NO" id="G6I-9E-FbE">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <animations/>
+                                </imageView>
+                                <button tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyb-Ar-u8T">
+                                    <rect key="frame" x="18" y="0.0" width="150" height="40"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="110" maxY="0.0"/>
+                                    <state key="normal" title="精选分类" image="sidebar_icon_category_normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="sidebar_icon_category_pressed"/>
+                                    <connections>
+                                        <action selector="clickSideBarButton:" destination="-1" eventType="touchUpInside" id="jfd-oa-lZe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aJ-AY-uRI">
+                            <rect key="frame" x="0.0" y="48" width="176" height="40"/>
+                            <subviews>
+                                <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar_dot" translatesAutoresizingMaskIntoConstraints="NO" id="CjN-q5-aLg">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <animations/>
+                                </imageView>
+                                <button tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwK-Nt-1Eb">
+                                    <rect key="frame" x="18" y="0.0" width="150" height="40"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="110" maxY="0.0"/>
+                                    <state key="normal" title="每日最美" image="sidebar_icon_days_normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="sidebar_icon_days_pressed"/>
+                                    <connections>
+                                        <action selector="clickSideBarButton:" destination="-1" eventType="touchUpInside" id="WXp-6u-66J"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WJk-V0-GUv">
+                            <rect key="frame" x="0.0" y="0.0" width="176" height="40"/>
+                            <subviews>
+                                <imageView hidden="YES" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar_dot" translatesAutoresizingMaskIntoConstraints="NO" id="FM5-JP-g67">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <animations/>
+                                </imageView>
+                                <button tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biC-Xb-HNK">
+                                    <rect key="frame" x="18" y="0.0" width="150" height="40"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="110" maxY="0.0"/>
+                                    <state key="normal" title="发现应用" image="sidebar_icon_discover_normal"/>
+                                    <state key="highlighted" image="sidebar_icon_discover_pressed"/>
+                                    <connections>
+                                        <action selector="clickSideBarButton:" destination="-1" eventType="touchUpInside" id="4dL-Es-sbY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="184" id="GJC-YV-9O8"/>
+                        <constraint firstAttribute="width" constant="176" id="wVh-pk-Qxi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyS-fo-iWY">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhW-cH-DxL">
+                            <rect key="frame" x="58" y="7" width="190" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Bym-os-mMW"/>
+                                <constraint firstAttribute="width" constant="190" id="Uev-vc-16p"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="社区骗花指南（一）">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="getFlowerInfo:" destination="-1" eventType="touchUpInside" id="4pi-CD-rZQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-XG-LxM">
+                            <rect key="frame" x="337" y="7" width="30" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="F0x-Do-0gS"/>
+                                <constraint firstAttribute="width" constant="30" id="kKF-Kb-Y6f"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="sidebar_icon_more_normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="sidebar_icon_more_normal"/>
+                            <connections>
+                                <action selector="showMore:" destination="-1" eventType="touchUpInside" id="mkR-kq-5ZL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lG-kN-Ujt">
+                            <rect key="frame" x="20" y="7" width="30" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="AjZ-mS-Agl"/>
+                                <constraint firstAttribute="width" constant="30" id="FPz-Ec-R1E"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="sidebar_icon_search_normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="sidebar_icon_search_pressed"/>
+                            <connections>
+                                <action selector="secrch:" destination="-1" eventType="touchUpInside" id="o46-9j-WeN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="nhW-cH-DxL" firstAttribute="leading" secondItem="4lG-kN-Ujt" secondAttribute="trailing" constant="8" id="0wf-Ob-0v4"/>
+                        <constraint firstAttribute="bottom" secondItem="4lG-kN-Ujt" secondAttribute="bottom" constant="7" id="3L4-wL-SFd"/>
+                        <constraint firstAttribute="bottom" secondItem="nhW-cH-DxL" secondAttribute="bottom" constant="7" id="NDo-WA-OkA"/>
+                        <constraint firstItem="4lG-kN-Ujt" firstAttribute="leading" secondItem="AyS-fo-iWY" secondAttribute="leading" constant="20" id="f6Y-2t-Not"/>
+                        <constraint firstAttribute="height" constant="44" id="gcA-WA-58f"/>
+                        <constraint firstAttribute="trailing" secondItem="Kav-XG-LxM" secondAttribute="trailing" constant="8" id="mEI-kq-5o2"/>
+                        <constraint firstAttribute="bottom" secondItem="Kav-XG-LxM" secondAttribute="bottom" constant="7" id="rlc-ZU-V7a"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidenav_icon_tap_normal" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-7A-e7e">
+                    <rect key="frame" x="138" y="423" width="99" height="99"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="5ND-CF-Ecd"/>
+                        <constraint firstAttribute="height" constant="99" id="Fnx-Gd-W6Q"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AyS-fo-iWY" secondAttribute="trailing" id="2FY-8B-SQD"/>
+                <constraint firstItem="CwR-6i-AVE" firstAttribute="leading" secondItem="Xf1-ZF-xwV" secondAttribute="trailing" constant="8" id="2HK-6p-AaD"/>
+                <constraint firstAttribute="bottom" secondItem="AyS-fo-iWY" secondAttribute="bottom" id="5aE-sW-kZ4"/>
+                <constraint firstItem="AyS-fo-iWY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8as-LJ-1J1"/>
+                <constraint firstItem="CwR-6i-AVE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="59" id="LAQ-P1-e16"/>
+                <constraint firstAttribute="centerY" secondItem="CvA-7A-e7e" secondAttribute="centerY" constant="-139" id="Luv-zs-Bx9"/>
+                <constraint firstItem="Xf1-ZF-xwV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="MYK-a7-QHL"/>
+                <constraint firstItem="BBE-M9-Ce9" firstAttribute="top" secondItem="CwR-6i-AVE" secondAttribute="bottom" constant="50" id="UtQ-wc-N8q"/>
+                <constraint firstItem="Xf1-ZF-xwV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="bZb-9p-8eH"/>
+                <constraint firstAttribute="centerX" secondItem="BBE-M9-Ce9" secondAttribute="centerX" id="dhH-ck-SvG"/>
+                <constraint firstAttribute="centerX" secondItem="CvA-7A-e7e" secondAttribute="centerX" id="ykM-R0-DgE"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="247.5" y="-4.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sidebar_arrow_normal" width="16" height="29"/>
+        <image name="sidebar_arrow_pressed" width="16" height="29"/>
+        <image name="sidebar_dot" width="14" height="14"/>
+        <image name="sidebar_icon_category_normal" width="66" height="66"/>
+        <image name="sidebar_icon_category_pressed" width="66" height="66"/>
+        <image name="sidebar_icon_days_normal" width="66" height="66"/>
+        <image name="sidebar_icon_days_pressed" width="66" height="66"/>
+        <image name="sidebar_icon_discover_normal" width="66" height="66"/>
+        <image name="sidebar_icon_discover_pressed" width="66" height="66"/>
+        <image name="sidebar_icon_more_normal" width="66" height="66"/>
+        <image name="sidebar_icon_play_normal" width="66" height="66"/>
+        <image name="sidebar_icon_play_pressed" width="66" height="66"/>
+        <image name="sidebar_icon_search_normal" width="66" height="66"/>
+        <image name="sidebar_icon_search_pressed" width="66" height="66"/>
+        <image name="sidebar_signin_default" width="95" height="98"/>
+        <image name="sidenav_icon_tap_normal" width="198" height="198"/>
+    </resources>
+</document>

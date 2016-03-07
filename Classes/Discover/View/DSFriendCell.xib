@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DSFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="60" sectionHeaderHeight="54" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="hI4-z0-GIL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.79434269674881564" green="0.79322393777316713" blue="0.81276587041884818" alpha="1" colorSpace="calibratedRGB"/>
+                    </tableView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="hI4-z0-GIL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1TR-OI-nbF"/>
+                <constraint firstAttribute="bottom" secondItem="hI4-z0-GIL" secondAttribute="bottom" id="RN1-bE-cZY"/>
+                <constraint firstItem="hI4-z0-GIL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aOR-Vt-hQf"/>
+                <constraint firstAttribute="trailing" secondItem="hI4-z0-GIL" secondAttribute="trailing" id="dzm-OA-jKe"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="hI4-z0-GIL" id="5lv-fe-ao3"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

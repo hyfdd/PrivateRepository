@@ -1,0 +1,33 @@
+//
+//  pchFile.pch
+//  ZuiMei
+//
+//  Created by 王大帅 on 15/9/11.
+//  Copyright (c) 2015年 王大帅. All rights reserved.
+//
+
+#ifndef ZuiMei_pchFile_pch
+#define ZuiMei_pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#define DSLog(format, ...) do {                                             \
+fprintf(stderr, "<%s : %d> %s\n",                                           \
+[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String],  \
+__LINE__, __func__);                                                        \
+(NSLog)((format), ##__VA_ARGS__);                                           \
+fprintf(stderr, "-------\n");                                               \
+} while (0)
+
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define ColorRGBW(r,g,b,w) [UIColor colorWithRed:r green:g blue:b alpha:w]
+#define RandomRGBColor [UIColor colorWithRed:(arc4random() % 60 + 98) / 255.0 green:(arc4random() % 60 + 98) / 255.0 blue:(arc4random() % 60 + 98) / 255.0 alpha:1]
+
+#endif
+
+#endif

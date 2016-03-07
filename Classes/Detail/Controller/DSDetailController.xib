@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSDetailController">
+            <connections>
+                <outlet property="backButton" destination="BHm-m3-fcc" id="1OV-qK-BRE"/>
+                <outlet property="collectButton" destination="R49-eE-y1s" id="dgN-h5-fez"/>
+                <outlet property="downloadButton" destination="4PV-wh-hiD" id="HHE-pY-ac0"/>
+                <outlet property="shareButton" destination="BO7-Xf-bLj" id="eVw-Rf-5mc"/>
+                <outlet property="tableView" destination="5Dh-dA-epD" id="p5a-OO-utT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Dh-dA-epD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PV-wh-hiD" userLabel="Download button">
+                    <rect key="frame" x="190" y="30" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AvI-VW-Tno"/>
+                        <constraint firstAttribute="width" constant="40" id="I7m-mB-wgZ"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="detail_icon_download_roll_normal"/>
+                    <state key="highlighted" backgroundImage="detail_icon_download_roll_pressed"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="ZGh-q8-cDh"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BO7-Xf-bLj" userLabel="Share Button">
+                    <rect key="frame" x="130" y="30" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="2dF-DU-0bl"/>
+                        <constraint firstAttribute="height" constant="40" id="tR0-yV-GvA"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="detail_icon_share_roll_normal"/>
+                    <state key="highlighted" backgroundImage="detail_icon_share_roll_pressed"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="g6b-6F-beo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHm-m3-fcc">
+                    <rect key="frame" x="10" y="30" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="M3e-W5-eK2"/>
+                        <constraint firstAttribute="width" constant="40" id="M5B-Ij-A6N"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="detail_icon_back_normal"/>
+                    <state key="highlighted" backgroundImage="detail_icon_back_pressed"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="162-dJ-F92"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R49-eE-y1s" userLabel="Fav Button">
+                    <rect key="frame" x="70" y="30" width="40" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Oay-tg-75B"/>
+                        <constraint firstAttribute="width" constant="40" id="few-LK-5YC"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="detail_icon_fav_roll_normal"/>
+                    <state key="highlighted" backgroundImage="detail_icon_fav_roll_pressed"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="L4c-g9-1WZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R49-eE-y1s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="0Vf-lQ-EAC"/>
+                <constraint firstAttribute="bottom" secondItem="5Dh-dA-epD" secondAttribute="bottom" constant="44" id="6tz-Yy-hZG"/>
+                <constraint firstItem="5Dh-dA-epD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9IT-Hr-69S"/>
+                <constraint firstItem="4PV-wh-hiD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="EzB-0d-cBB"/>
+                <constraint firstItem="4PV-wh-hiD" firstAttribute="leading" secondItem="BO7-Xf-bLj" secondAttribute="trailing" constant="20" id="Ig5-1L-u8L"/>
+                <constraint firstItem="BO7-Xf-bLj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="LOi-5E-pC2"/>
+                <constraint firstAttribute="trailing" secondItem="5Dh-dA-epD" secondAttribute="trailing" id="Vew-xb-n6f"/>
+                <constraint firstItem="BHm-m3-fcc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Wed-WA-I3N"/>
+                <constraint firstItem="BHm-m3-fcc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="b7E-uY-8Gb"/>
+                <constraint firstItem="BO7-Xf-bLj" firstAttribute="leading" secondItem="R49-eE-y1s" secondAttribute="trailing" constant="20" id="ijl-9I-q2C"/>
+                <constraint firstItem="R49-eE-y1s" firstAttribute="leading" secondItem="BHm-m3-fcc" secondAttribute="trailing" constant="20" id="sfY-Rm-xQK"/>
+                <constraint firstItem="5Dh-dA-epD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wFM-0C-Xuf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="79" y="222"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="detail_icon_back_normal" width="80" height="80"/>
+        <image name="detail_icon_back_pressed" width="80" height="80"/>
+        <image name="detail_icon_download_roll_normal" width="80" height="80"/>
+        <image name="detail_icon_download_roll_pressed" width="80" height="80"/>
+        <image name="detail_icon_fav_roll_normal" width="80" height="80"/>
+        <image name="detail_icon_fav_roll_pressed" width="80" height="80"/>
+        <image name="detail_icon_share_roll_normal" width="80" height="80"/>
+        <image name="detail_icon_share_roll_pressed" width="80" height="80"/>
+    </resources>
+</document>

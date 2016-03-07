@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++33E1DDB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++DB3E96E" : 0,
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++3C8E65B" : 0,
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++33E1DDB" : 0,
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++C36CF4C" : 0,
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++9F37CF5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DA57C839-1095-47DB-88E9-05325668B6A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++DB3E96E" : "BestApp\/",
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++3C8E65B" : "ZuiMei2\/",
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++33E1DDB" : "ZuiMei4\/",
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++C36CF4C" : "..",
+    "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++9F37CF5" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ZuiMei",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ZuiMei.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:is0bnd\/BestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++33E1DDB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:is0bnd\/BestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++3C8E65B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:is0bnd\/BestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++9F37CF5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/is0bnd\/BestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++C36CF4C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:is0bnd\/BestApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F4ADCDD29BB8D18817A0E303BB4DF0075F3BCAD2+++DB3E96E"
+    }
+  ]
+}
